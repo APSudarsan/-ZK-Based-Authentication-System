@@ -13,6 +13,9 @@ const App = () => {
             ) : (
                 <Register users={users} setUsers={setUsers} setShowLogin={setShowLogin} />
             )}
+            <footer className="w-full  bottom-0 bg-custom-bg text-center text-sm text-gray-400 py-4 pb-8">
+                Designed and Developed by <a href ="https://github.com/APSudarsan/" className="text-blue-500 font-semibold">Sudarsan</a>
+            </footer>
         </div>
     );
 };

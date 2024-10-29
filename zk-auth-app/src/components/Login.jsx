@@ -44,8 +44,8 @@ const Login = ({ users, setShowLogin }) => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-            <div className="w-full max-w-sm bg-gray-800 rounded-lg p-6 shadow-lg">
+        <div className="flex items-center justify-center min-h-screen bg-custom-bg text-white">
+            <div className="w-full max-w-xs bg-custom-card rounded-lg p-6 shadow-lg mx-4 border border-custom-border">
                 <div className="text-center mb-6">
                     <h2 className="text-xl font-semibold">Sign in using ZK Auth</h2>
                 </div>
@@ -56,7 +56,7 @@ const Login = ({ users, setShowLogin }) => {
                             type="text"
                             id="username"
                             placeholder="Username or email address"
-                            className="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 rounded bg-custom-bg text-white border border-custom-border focus:ring-2 focus:ring-blue-500"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
@@ -68,7 +68,7 @@ const Login = ({ users, setShowLogin }) => {
                             type="password"
                             id="password"
                             placeholder="Password"
-                            className="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-2 rounded bg-custom-bg text-white border border-custom-border focus:ring-2 focus:ring-blue-500"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required

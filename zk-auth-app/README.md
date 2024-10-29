@@ -6,4 +6,4 @@
  process. Clone the given pkg folder onto the src folder where you want to integrate. Also, have
  a look at the given example on how to import wasm_js files
 
-<h3>Site Link <a href=" https://zkauth-vs.netlify.app">https://zkauth-vs.netlify.app</a>
+<h3>Site Link: <a href="https://zkauth-vs.netlify.app">https://zkauth-vs.netlify.app</a>
