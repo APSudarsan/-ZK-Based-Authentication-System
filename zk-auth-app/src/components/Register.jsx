@@ -1,4 +1,3 @@
-// src/components/Register.jsx
 import React, { useState, useEffect } from 'react';
 import initWasm, { get_pass_hash } from '../pkg/zk_wasm.js';
 

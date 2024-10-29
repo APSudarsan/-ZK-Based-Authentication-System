@@ -1,4 +1,3 @@
-// src/components/Login.jsx
 import React, { useState, useEffect } from 'react';
 import initWasm, { generate_proof, verify_proof } from '../pkg/zk_wasm.js';
 
