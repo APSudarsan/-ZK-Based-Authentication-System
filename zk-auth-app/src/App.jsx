@@ -1,27 +1,19 @@
-// src/App.js
-import React, { useState, useEffect } from 'react';
-import Register from './components/Register';
+// src/App.jsx
+import React, { useState } from 'react';
 import Login from './components/Login';
+import Register from './components/Register';
 
 const App = () => {
     const [users, setUsers] = useState([]);
-
-    // Fetch users initially
-    useEffect(() => {
-        const fetchUsers = async () => {
-            const response = await fetch('http://localhost:3000/users');
-            const data = await response.json();
-            setUsers(data);
-        };
-
-        fetchUsers();
-    }, []);
+    const [showLogin, setShowLogin] = useState(true);
 
     return (
-        <div>
-            <h1>Authentication App</h1>
-            <Register users={users} setUsers={setUsers} /> {/* Pass users and setUsers */}
-            <Login users={users} />
+        <div className="App">
+            {showLogin ? (
+                <Login users={users} setShowLogin={setShowLogin} />
+            ) : (
+                <Register users={users} setUsers={setUsers} setShowLogin={setShowLogin} />
+            )}
         </div>
     );
 };

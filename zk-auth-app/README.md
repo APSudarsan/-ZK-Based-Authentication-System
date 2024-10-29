@@ -1,8 +1,7 @@
-# React + Vite
+# Implementing a ZK-Based Authentication System Using zkAuth Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Objective: Develop a front-end authentication system using the provided zkAuth kit to
+ implement a zero-knowledge (ZK) proof-based login. Candidates will integrate the provided
+ WebAssembly (WASM) compiled JavaScript files with the UI to simulate a registration and login
+ process. Clone the given pkg folder onto the src folder where you want to integrate. Also, have
+ a look at the given example on how to import wasm_js files
